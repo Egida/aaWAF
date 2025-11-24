@@ -62,6 +62,14 @@
 - ✅ Nday漏洞（如DedeCMS、PHPCMS等）
 - ✅ 弱密码防护 (如123456、password等)
 
+## 解码模块列表 (最大自动解密三层)
+- ✅ URL解码
+- ✅ Unicode解码
+- ✅ Base64解码
+- ✅ 十六进制解码(Hex)
+- ✅ Json解码
+- ✅ Gzip解码 (V7.1新增)
+
 ## 测试拦截的payload <a href="./Payload.md">拦截测试表 </a>
 
 ## 未来更新的模块
