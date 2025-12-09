@@ -95,6 +95,7 @@
   - ✅ OGNL表达式 (2025-10-28更新)
   - ✅ SpEL表达式 (2025-10-24更新)
   - ✅ JSP EL表达式
+  - ✅ Java 代码块 (2025-12-09更新)
   - ❌ FreeMarker(SSTI)
   - ❌ Velocity(SSTI)
 

