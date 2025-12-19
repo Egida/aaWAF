@@ -54,6 +54,7 @@
 - ✅ 模板注入(如Flask、SSTI)
 - ✅ XML外部实体注入(XXE)
 - ✅ ASP.NET代码注入  (2025-08-21更新)
+- ✅ NodeJs代码执行  (2025-12-19更新)
 
 ## 正则匹配模块列表
 - ✅ 恶意爬虫(UA)
@@ -125,7 +126,6 @@
 <p align="center">
     <img src="./img/btwaf.png">
 </p>
-
 
 
 

