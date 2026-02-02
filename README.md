@@ -75,7 +75,7 @@
 
 ## 未来更新的模块
 - [0] ASP.NET代码注入 
-    - ✅ ASP VBScript 代码注入  (2025-08-21更新)
+    - ✅ ASP VBScript 代码注入  (2026-02-02更新)
     - ✅ ASP JScript 代码注入   (2025-08-21更新)
     - ✅ ASP.NET C# 代码注入    (2025-08-21更新)
     - ❌ ASP.NET VB.NET 代码注入
