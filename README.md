@@ -70,6 +70,7 @@
 - ✅ 十六进制解码(Hex)
 - ✅ Json解码
 - ✅ Gzip解码 (V7.1新增)
+- ✅ XSS引擎解析HTML解析各类编码 (2026-02-02 V7.2新增)
 
 ## 测试拦截的payload <a href="./Payload.md">拦截测试表 </a>
 
