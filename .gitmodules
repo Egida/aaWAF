@@ -4,3 +4,6 @@
 [submodule "Ognl"]
 	path = Ognl
 	url = https://github.com/weaweawe01/ParserOgnl.git
+[submodule "freemarker-ast"]
+	path = freemarker-ast
+	url = https://github.com/weaweawe01/freemarker-ast
