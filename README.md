@@ -116,11 +116,11 @@ sending 100% |██████████████████████
     - ✅ H2 (2025-08-30更新)
 
 - [2] Java代码注入:
-  - ✅ OGNL表达式 (2025-10-28更新)
-  - ✅ SpEL表达式 (2025-10-24更新)
+  - ✅ OGNL表达式 (2025-10-28更新 <a href="https://github.com/weaweawe01/ParserOgnl">已开源 </a> )
+  - ✅ SpEL表达式 (2025-10-24更新 <a href="https://github.com/weaweawe01/ParserSpel">已开源 </a> )
   - ✅ JSP EL表达式
   - ✅ Java 代码块 (2025-12-09更新)
-  - ❌ FreeMarker(SSTI)
+  - ✅ FreeMarker(SSTI) (2026-03-03 更新 v7.3 <a href="https://github.com/weaweawe01/freemarker-ast">已开源 </a> )
   - ❌ Velocity(SSTI)
 
 - [3] 模板注入:
@@ -220,3 +220,4 @@ bash install_cloudwaf.sh offline
 >1. PHP解析引擎      【已开源】
 >1. SpEL解析引擎      【已开源】
 >1. OGNL解析引擎      【已开源】
+>1. FreeMarker解析引擎      【已开源】
