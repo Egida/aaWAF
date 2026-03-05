@@ -121,7 +121,7 @@ sending 100% |██████████████████████
   - ✅ JSP EL表达式
   - ✅ Java 代码块 (2025-12-09更新)
   - ✅ FreeMarker(SSTI) (2026-03-03 更新 v7.3 <a href="https://github.com/weaweawe01/freemarker-ast">已开源 </a> )
-  - ❌ Velocity(SSTI)
+  - ✅ Velocity(SSTI) (2026-03-06 更新 v7.3 <a href="https://github.com/weaweawe01/velocity-ast">已开源 </a> )
 
 - [3] 模板注入:
     - ✅ Jinja2
@@ -221,3 +221,4 @@ bash install_cloudwaf.sh offline
 >1. SpEL解析引擎      【已开源】
 >1. OGNL解析引擎      【已开源】
 >1. FreeMarker解析引擎      【已开源】
+>1. Velocity解析引擎      【已开源】
