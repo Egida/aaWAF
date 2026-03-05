@@ -7,3 +7,6 @@
 [submodule "freemarker-ast"]
 	path = freemarker-ast
 	url = https://github.com/weaweawe01/freemarker-ast
+[submodule "velocity-ast"]
+	path = velocity-ast
+	url = https://github.com/weaweawe01/velocity-ast
