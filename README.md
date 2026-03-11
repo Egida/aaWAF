@@ -125,7 +125,7 @@ sending 100% |██████████████████████
 
 - [3] 模板注入:
     - ✅ Jinja2
-    - ❌ Twig
+    - ✅ Twig (2026-03-11 <a href="https://github.com/weaweawe01/twig-ast">已开源 </a>)
     - ❌ Mustache
     - ❌ Handlebars
     - ❌ Smarty
