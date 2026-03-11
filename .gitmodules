@@ -10,3 +10,6 @@
 [submodule "velocity-ast"]
 	path = velocity-ast
 	url = https://github.com/weaweawe01/velocity-ast
+[submodule "twig-ast"]
+	path = twig-ast
+	url = https://github.com/weaweawe01/twig-ast
