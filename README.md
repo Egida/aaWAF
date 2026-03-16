@@ -101,18 +101,14 @@ sending 100% |██████████████████████
     - ✅ ASP VBScript 代码注入  (2026-02-02更新)
     - ✅ ASP JScript 代码注入   (2025-08-21更新)
     - ✅ ASP.NET C# 代码注入    (2025-08-21更新)
-    - ❌ ASP.NET VB.NET 代码注入
 
 - [1] Java 反序列化
     - ✅ Fastjson 反序列化 (2025-08-30更新)
     - ✅ Log4j2 反序列化 (2025-11-14更新)
-    - ❌ Spring 反序列化
     - ✅ Jackson 反序列化(2025-08-30更新)
-    - ❌ Hibernate 反序列化
     - ✅ JNdi 反序列化(2025-08-30更新)
     - ❌ Shiro 反序列化
     - ✅ JDBC 反序列化(2025-08-30更新)
-    - ❌ Expression 反序列化
     - ✅ H2 (2025-08-30更新)
 
 - [2] Java代码注入:
@@ -120,15 +116,14 @@ sending 100% |██████████████████████
   - ✅ SpEL表达式 (2025-10-24更新 <a href="https://github.com/weaweawe01/ParserSpel">已开源 </a> )
   - ✅ JSP EL表达式
   - ✅ Java 代码块 (2025-12-09更新)
-  - ✅ FreeMarker(SSTI) (2026-03-03 更新 v7.3 <a href="https://github.com/weaweawe01/freemarker-ast">已开源 </a> )
-  - ✅ Velocity(SSTI) (2026-03-06 更新 v7.3 <a href="https://github.com/weaweawe01/velocity-ast">已开源 </a> )
 
 - [3] 模板注入:
     - ✅ Jinja2
     - ✅ Twig (2026-03-12 更新 v7.3 <a href="https://github.com/weaweawe01/twig-ast">已开源 </a>)
-    - ❌ Mustache
-    - ❌ Handlebars
-    - ❌ Smarty
+    - ✅ Smarty (2026-03-16 更新 v7.3)
+    - ✅ FreeMarker(SSTI) (2026-03-03 更新 v7.3 <a href="https://github.com/weaweawe01/freemarker-ast">已开源 </a> )
+    - ✅ Velocity(SSTI) (2026-03-06 更新 v7.3 <a href="https://github.com/weaweawe01/velocity-ast">已开源 </a> )
+
 
 - [4] Nday漏洞:
     - ❌ 常见的PHP、Java、Python等CMS漏洞
