@@ -71,8 +71,8 @@ sending 100% |██████████████████████
 - ✅ PHP代码注入
 - ✅ PHP反序化漏洞
 - ✅ Java代码注入 
-- ✅ Java反序化漏洞 (如CC1、CC2、CC3)
-- ✅ 模板注入(如Flask、SSTI)
+- ✅ Java反序列化漏洞 (如CC1、CC2、CC3)
+- ✅ 模板注入(Jinja2、Twig、Smarty 、FreeMarker、Velocity)
 - ✅ XML外部实体注入(XXE)
 - ✅ ASP.NET代码注入  (2025-08-21更新)
 - ✅ NodeJs代码执行  (2025-12-19更新)
