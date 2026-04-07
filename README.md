@@ -110,6 +110,7 @@ sending 100% |██████████████████████
     - ❌ Shiro 反序列化
     - ✅ JDBC 反序列化(2025-08-30更新)
     - ✅ H2 (2025-08-30更新)
+    
 
 - [2] Java代码注入:
   - ✅ OGNL表达式 (2025-10-28更新 <a href="https://github.com/weaweawe01/ParserOgnl">已开源 </a> )
@@ -123,6 +124,7 @@ sending 100% |██████████████████████
     - ✅ Smarty (2026-03-16 更新 v7.3)
     - ✅ FreeMarker(SSTI) (2026-03-03 更新 v7.3 <a href="https://github.com/weaweawe01/freemarker-ast">已开源 </a> )
     - ✅ Velocity(SSTI) (2026-03-06 更新 v7.3 <a href="https://github.com/weaweawe01/velocity-ast">已开源 </a> )
+    - ✅ SnakeYAML(SSTI) (2026-04-07 <a href="https://github.com/weaweawe01/snakeyaml-ast">已开源 </a> )
 
 
 - [4] Nday漏洞:
@@ -218,3 +220,4 @@ bash install_cloudwaf.sh offline
 >1. OGNL解析引擎      【已开源】
 >1. FreeMarker解析引擎      【已开源】
 >1. Velocity解析引擎      【已开源】
+>1. SnakeYAML解析引擎      【已开源】
