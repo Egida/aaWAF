@@ -13,3 +13,6 @@
 [submodule "twig-ast"]
 	path = twig-ast
 	url = https://github.com/weaweawe01/twig-ast
+[submodule "snakeyaml"]
+	path = snakeyaml
+	url = https://github.com/weaweawe01/snakeyaml-ast
