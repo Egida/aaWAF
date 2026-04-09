@@ -111,6 +111,7 @@ sending 100% |██████████████████████
     - ❌ Shiro 反序列化
     - ✅ JDBC 反序列化(2025-08-30更新)
     - ✅ H2 (2025-08-30更新)
+    - ✅ SnakeYAML反序列化 (2026-04-09 更新 v7.3 <a href="https://github.com/weaweawe01/snakeyaml-ast">已开源 </a> )
     
 
 - [2] Java代码注入:
@@ -119,13 +120,14 @@ sending 100% |██████████████████████
   - ✅ JSP EL表达式
   - ✅ Java 代码块 (2025-12-09更新)
 
+
 - [3] 模板注入:
     - ✅ Jinja2
     - ✅ Twig (2026-03-12 更新 v7.3 <a href="https://github.com/weaweawe01/twig-ast">已开源 </a>)
     - ✅ Smarty (2026-03-16 更新 v7.3)
     - ✅ FreeMarker(SSTI) (2026-03-03 更新 v7.3 <a href="https://github.com/weaweawe01/freemarker-ast">已开源 </a> )
     - ✅ Velocity(SSTI) (2026-03-06 更新 v7.3 <a href="https://github.com/weaweawe01/velocity-ast">已开源 </a> )
-    - ✅ SnakeYAML(SSTI) (2026-04-09 更新 v7.3 <a href="https://github.com/weaweawe01/snakeyaml-ast">已开源 </a> )
+    - ✅ thymeleaf(SSTI) (2026-04-09 更新 v7.3 )
 
 
 - [4] Nday漏洞:
