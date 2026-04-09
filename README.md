@@ -50,10 +50,11 @@
 root@debian:/tools/bl/blazehttp-master# ./build/blazehttp -t http://192.168.77.79
 sending 100% |██████████████████████████████████████████████████████████████████████| (33877/33877, 1918 it/s) [17s:0s]
 总样本数量: 33877    成功: 33877    错误: 0
-检出率: 77.96% (恶意样本总数: 658 , 正确拦截: 513 , 漏报放行: 145)
-误报率: 0.15% (正常样本总数: 33219 , 正确放行: 33168 , 误报拦截: 51)
-准确率: 99.42% (正确拦截 + 正确放行）/样本总数 
-平均耗时: 5.10毫秒
+检出率: 83.13% (恶意样本总数: 658 , 正确拦截: 547 , 漏报放行: 111)
+误报率: 0.16% (正常样本总数: 33219 , 正确放行: 33165 , 误报拦截: 54)
+准确率: 99.51% (正确拦截 + 正确放行）/样本总数 
+平均耗时: 5.16毫秒
+
 ```
 
 ## 安装使用
@@ -124,7 +125,7 @@ sending 100% |██████████████████████
     - ✅ Smarty (2026-03-16 更新 v7.3)
     - ✅ FreeMarker(SSTI) (2026-03-03 更新 v7.3 <a href="https://github.com/weaweawe01/freemarker-ast">已开源 </a> )
     - ✅ Velocity(SSTI) (2026-03-06 更新 v7.3 <a href="https://github.com/weaweawe01/velocity-ast">已开源 </a> )
-    - ✅ SnakeYAML(SSTI) (2026-04-07 <a href="https://github.com/weaweawe01/snakeyaml-ast">已开源 </a> )
+    - ✅ SnakeYAML(SSTI) (2026-04-09 更新 v7.3 <a href="https://github.com/weaweawe01/snakeyaml-ast">已开源 </a> )
 
 
 - [4] Nday漏洞:
