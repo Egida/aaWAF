@@ -129,7 +129,7 @@ sending 100% |██████████████████████
   - ✅ SpEL表达式 (2025-10-24更新 <a href="https://github.com/weaweawe01/ParserSpel">已开源 </a> )
   - ✅ JSP EL表达式
   - ✅ Java 代码块 (2025-12-09更新)
-
+  - ✅ Java ScriptEngine 代码执行 (2026-04-10 更新 v7.3)
 
 - [3] 模板注入:
     - ✅ Jinja2
